@@ -9,7 +9,7 @@
 fn main() {
     let my_option: Option<()> = None;
     if my_option.is_none() {
-        my_option.unwrap();
+        //my_option.unwrap();
     }
 
     let my_arr = &[
@@ -18,7 +18,8 @@ fn main() {
     ];
     println!("My array! Here it is: {:?}", my_arr);
 
-    let mut my_empty_vec = vec![1, 2, 3, 4, 5].resize(1, 5);
+    let mut my_empty_vec = vec![1, 2, 3, 4, 5];
+    my_empty_vec.resize(1, 5);
     println!("This Vec is empty, see? {:?}", my_empty_vec);
 
     let mut value_a = 45;
