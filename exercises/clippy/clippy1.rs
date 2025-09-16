@@ -16,10 +16,8 @@ fn main() {
     let pi: f32 = f32::consts::PI;
     let radius: f32 = 5.00;
 
-    let area = pi * f32::powf(radius, 2.0_f32);
+    let _area = pi * f32::powf(radius, 2.0_f32);
 
     println!(
-        "The area of a circle with radius {:.2} is {:.5}!",
-        radius, area
-    )
+        "The area of a circle with radius {radius:.2} is {radius:.5}!");
 }

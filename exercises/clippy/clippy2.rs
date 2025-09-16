@@ -10,5 +10,5 @@ fn main() {
     if let Some(x) = option {
         res += x;
     }
-    println!("{}", res);
+    println!("{res}");
 }
