@@ -4,7 +4,10 @@
 	you can use bubble sorting, insertion sorting, heap sorting, etc.
 */
 
-fn sort<T>(array: &mut [T]){
+fn sort<T>(array: &mut [T])
+where
+    T: Copy + PartialOrd,
+{
 	//TODO
 	let i: i32 = 0;
     let j: i32;
